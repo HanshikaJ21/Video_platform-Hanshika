@@ -1,0 +1,75 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: #007bff;
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.button-primary:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+.error-message {
+    color: #f00;
+    margin-bottom: 10px;
+}
+
+/* Login page specific styles */
+.login-container {
+    background: linear-gradient(to bottom right, #E91E63, #2196F3); /* Pinkish-blue gradient background */
+}
+
+.login-area {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+.login-area input {
+    width: calc(100% - 22px); /* Adjusting for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Upload page specific styles */
+.upload-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#fileInput {
+    display: none;
+}
+
+#fileList {
+    text-align: left;
+}
+
+#fileList li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}

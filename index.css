@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #E91E63, #2196F3);
+}
+
+header {
+    background-color: #62cff4; /* Dark background color for header */
+    padding: 10px;
+}
+
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h1 {
+    margin: 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.welcome{
+    padding: 20px 0;
+    text-align: center;
+    color: #fff; /* Text color for sections */
+
+}
+.slider,
+.comments {
+       padding: 20px 0;
+    text-align: center;
+    color: #fff; /* Text color for sections */
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: row; /* Ensure comments are displayed horizontally */
+    justify-content: center;
+    align-items: center;
+}
+
+.comment {
+    background-color: #546E7A; /* Dark background color for comment boxes */
+    padding: 10px;
+    margin: 5px; /* Add margin around comment boxes */
+    display: inline-block; /* Display comment boxes inline */
+}
+.user-icon {
+    color: #fff; /* Color for user icon */
+    margin-right: 5px;
+}

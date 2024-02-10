@@ -1,0 +1,114 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* Background gradient for the entire page */
+    background: linear-gradient(to bottom right, #E91E63, #2196F3);
+}
+
+header {
+    background-color: #6C5CE7;
+    color: white;
+    padding: 20px;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Video list styles */
+.video-list {
+    width: 80%;
+    margin: 20px auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+#videoList {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove default list margin */
+}
+
+#videoList li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 10px; /* Add spacing between list items */
+}
+
+#videoList li a {
+    color: white;
+    text-decoration: none;
+    display: block; /* Ensure links take up full width of list item */
+    padding: 5px; /* Add padding to make links clickable */
+}
+
+/* Video player styles */
+.video-container {
+    width: 80%; /* Adjust as needed */
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   position: relative;
+}
+
+video {
+    width: 100%; /* Ensure the video player takes up the full width */
+}
+.thumbnail {
+    width: 150px; /* Adjust thumbnail width */
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display:inline-block;
+    margin-bottom: 5px;
+    margin-right: 20px
+}
+.video-name {
+    display: block; /* Make video name a block element */
+    text-align: center; /* Center-align the video name */
+}
+.video-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.control-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+/* Define a class to highlight the last-watched video */
+.last-watched {
+    border: 2px solid #ff0000; /* Red border */
+    /* Add any other styles you want to use to highlight the video */
+}

@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #E91E63, #2196F3); /* Pinkish-blue gradient background */
+    
+    min-height: 100vh; /* Ensure minimum height of viewport */
+}
+
+header {
+    background-color: #6C5CE7;
+    color: white;
+    padding: 20px;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.upload-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px; /* Increase border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.upload-area {
+    border: 4px dashed #ccc;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 48px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.upload-text {
+    font-size: 18px;
+    color: #666;
+}
+
+#fileInput {
+    display: none;
+}
+
+#fileList {
+    text-align: left;
+}
+
+#fileList li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.video-name {
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+/* Existing styles... */
+
+.click-text {
+    color: #007bff; /* Blue color */
+    text-decoration: underline; /* Underline the text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+/* Add this to styles_upload.css */
+.drag-over {
+    border-color: #007bff; /* Change border color when dragging over */
+}
+/* Existing styles... */
+
+#uploadButton {
+    width: 150px;
+    height: 40px;
+    background-color: #007bff; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+#uploadButton:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Existing styles... */

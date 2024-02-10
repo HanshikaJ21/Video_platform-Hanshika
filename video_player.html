@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="styles_video_player.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>My Video Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="upload.php">Upload Videos</a></li>
+                    <li><a href="video_player.html">Video Player</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="video-list">
+        <h2>Uploaded Videos</h2>
+        <ul id="videoList">
+            <!-- Uploaded videos with thumbnails will be dynamically added here -->
+        </ul>
+        <div class="delete-container">
+            <p><span style="color:#800000"><b>Click this button to delete a video</span></p>
+            <button id="btnDelete" class="delete-btn">Delete</button>
+        </div>
+    </div>
+    <div class="video-container">
+        <video id="videoPlayer" controls data-id=""></video>
+        <div class="video-controls">
+            <button id="btnBackward" class="control-btn">&#9664; -10s</button>
+            <button id="btnForward" class="control-btn">+10s &#9654;</button>
+        </div>
+    </div>
+    
+    <script src="video_player.js"></script>
+</body>
+</html>
